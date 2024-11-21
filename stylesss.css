@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.header-icons i {
+    font-size: 18px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.banner {
+    background-image: url('99ee69655bd73e1b894c4f408d467dc6.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: black;
+}
+
+.banner-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+}
+
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.products h3 {
+    font-size: 1.8em;
+    color: #d9534f;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 180px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height:150px;
+    object-fit:cover;
+    border-radius: 5px;
+}
+
+.product p {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.social-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-buttons a {
+    background-color: #3b5998;
+    color: black;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.social-buttons a:nth-child(2) {
+    background-color: #0078ff;
+}
+
+.social-buttons a:nth-child(3) {
+    background-color: #00a1d6;
+}
+
+.social-buttons a:nth-child(4) {
+    background-color: #d9534f;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+    align-items: center;  
+}
+
+
+.btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.buy-now {
+    background-color: #3498db;
+    color: white;
+    border: none;
+}
+
+
+.add-to-cart {
+    background-color: white;
+    color: #3498db;
+    border: 1px solid #3498db;
+}
+
+
+.btn:active {
+    transform: scale(0.95);
+    background-color: #2980b9; 
+}
+.icon-hant {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.icon-hant:hover {
+    color: #3498db;
+}
+
+.icon-hant {
+    color: white;
+    background-color: #3498db;
+    border-radius: 5px;
+}
