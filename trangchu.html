@@ -3,75 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhà sách Phương Nam</title>
+    <title>Danh Sách Sản Phẩm</title>
     <link rel="stylesheet" href="stylesss.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="Ảnh chụp màn hình 2024-11-07 190441.png" alt="Tủ Sách Xưa">
-                <h1>Nhà sách Phương Nam</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#" class="icon-hant">Giới thiệu</a></li>
-                    <li><a href="#" class="icon-hant">Tủ sách</a></li>
-                    <li><a href="#" class="icon-hant">Hỗ trợ</a></li>
-                    <li><a href="#" class="icon-hant">Blog Tủ Sách Xưa và Nay</a></li>
-                    <li><a href="#" class="icon-hant">Liên hệ</a></li>
-                </ul>
-            </nav>
-            <div class="header-icons">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
+    <header class="header">
+        <div class="logo"></div>
+        <div class="hamburger" id="hamburger">
+        
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </header>
-    <section class="banner">
-        <div class="banner-content">
-            <h2>Nhà sách Phuơng Nam</h2>
-            <p>Mở sách , mở tương lai</p>
-        </div>
-    </section>
+    
+    <nav class="menu" id="menu">
 
-
-    <section class="products">
-        <h3> Xả kho - Giảm giá cực sốc chỉ còn 40K</h3>
-        <div class="product-list">
- 
-            <div class="product">
-                <img src="sach-tam-ly-ky-nang.jpg" alt="Book 1">
-                <p>-40% khi mua vào hôm nay</p>
-                <h4>Đắc nhân tâm</h4>
-                <div class="button-group">
-                <button>Mua ngay 40.000 Vnd</button>
-                <button>Thêm vào giỏ hàng</button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="sach_hay_nhat_nen_doc_hat_giong_tam_hon_9187a42c48.jpg" alt="Book 2">
-                <p>-30% khi mua vào hôm nay</p>
-                <h4>Hạt giống tâm hồn</h4>
-                <div class="button-group">
-                <button>Mua ngay 40.000 Vnd</button>
-                <button>Thêm vào giỏ hàng</button>
-            </div>
-            </div>
-        </div>
-    </section>
-
->
-    <div class="social-buttons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-facebook-messenger"></i></a>
-        <a href="#"><i class="fab fa-zalo"></i></a>
-        <a href="#"><i class="fas fa-phone"></i></a>
+        <ul>
+            <li><a href="trangchu.html">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="sanpham.html">Sản phẩm</a></li>
+            <li><a href="https://www.facebook.com/thanhtinhihiz/">Liên hệ</a></li>
+        </ul>
+    </nav>
+<body>
+    <div class="header">
+        <h1>Nhà Sách Việt Nam</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Bạn cần tìm gì?">
+            <button>Tìm kiếm</button>
+        
+        </div>  
     </div>
 
+    <div class="product-section">
+        <h2>Danh Sách Sản Phẩm</h2>
+        <div id="product-container" class="product-list"></div>
+        <div class="pagination">
+            <button class="prev-page" onclick="changePage(-1)">&#171; Trước</button>
+            <span id="page-indicator"></span>
+            <button class="next-page" onclick="changePage(1)">Tiếp &#187;</button>
+        </div>
+        <div class="social-links">
+            <a href="sanpham.html" target="_blank" class="social-icon facebook">Xem thêm sản phẩm tại đây</a>
+        </div>
+    </div>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+        <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+        <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+    </div>
+    <script src="code.js"></script> 
 </body>
 </html>

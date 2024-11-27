@@ -30,35 +30,6 @@
             <button type="submit">Đăng ký</button>
             <p>Bạn đã có tài khoản? Hãy đăng nhập ngay <a href="dangnhap.html">Tại đây</a></p>
         </form>
-    </div>
-
-    <script>
-
-        document.getElementById('birthday').addEventListener('input', function (e) {
-            let input = e.target.value;
-            if (input.length === 2 || input.length === 5) {
-                if (input[input.length - 1] !== '/') {
-                    e.target.value += '/';
-                }
-            }
-        });
-        document.getElementById('togglePassword').addEventListener('click', function () {
-            const passwordField = document.getElementById('password');
-            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
-
-            passwordField.classList.add('fade');
-            passwordField.setAttribute('type', type);
-
-
-            this.textContent = type === 'password' ? 'Hiện' : 'Ẩn';
-
-
-            setTimeout(() => {
-                passwordField.classList.remove('fade');
-            }, 300); 
-        });
-    </script>
-
-    </script>
+    </div>    
 </body>
 </html>

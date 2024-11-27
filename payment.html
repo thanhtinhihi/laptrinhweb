@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán Bằng Mã QR Ngân Hàng</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="payment-container">
+        <header>
+            <h1>Thanh Toán Bằng Mã QR Ngân Hàng</h1>
+        </header>
+
+  
+        <section id="payment-info">
+            <h2>Thông Tin Thanh Toán</h2>
+            <p><strong>Phương thức thanh toán:</strong> Mã QR Ngân Hàng</p>
+            <p>Quét mã QR bên dưới để thanh toán vào tài khoản ngân hàng của tôi.</p>
+        </section>
+
+
+        <section id="qr-code">
+            <h2>Quét Mã QR</h2>
+            <div id="qrCodeContainer">
+ 
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Cửa Hàng XYZ. Mọi quyền được bảo lưu.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.0/build/qrcode.min.js"></script>
+    <script src="payment.js"></script>
+</body>
+</html>

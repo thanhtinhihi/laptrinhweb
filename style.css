@@ -1,115 +1,103 @@
-/* General Styles */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Header with Hamburger Menu */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .header .logo h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height: 20px;
-    cursor: pointer;
-  }
-  
-  .hamburger-menu span {
-    display: block;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
-  }
-  
-  /* Banner Styles */
-  .banner {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(to right, #007bff, #00bcd4);
-    color: white;
-    margin-bottom: 20px;
-  }
-  
-  .banner h2 {
-    font-size: 28px;
-    margin: 0;
-  }
-  
-  .banner p {
-    margin: 10px 0 0;
-    font-size: 16px;
-  }
-  
-  /* Payment Form Styles */
-  .payment-container {
-    background: #fff;
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .payment-container h2 {
-    margin-bottom: 20px;
-    color: #333;
-    text-align: center;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  input:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  .btn {
-    width: 100%;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.payment-container {
+  width: 80%;
+  margin: 30px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+
+#banners {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.banner {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#banners .banner:last-child {
+  margin-right: 0;
+}
+
+
+#payment-form {
+  margin-bottom: 40px;
+}
+
+#payment-form h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 30px;
+}
